@@ -138,11 +138,10 @@ export default {
 label {
   font-weight: bold;
   margin-bottom: 15px;
-  color: #222;
+  color:  #222222;;
   padding: 5px 10px;
   border-left: 4px solid #fcba03;
 }
-
 
 input, select {
   padding: 5px 10px;
@@ -191,5 +190,4 @@ input, select {
   background-color: transparent;
   color: #222;
 }
-
 </style>
