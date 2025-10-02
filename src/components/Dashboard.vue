@@ -54,7 +54,7 @@ export default {
 
       this.burgers = data
 
-      // Resgata os status de pedidos
+
       this.getStatus()
 
     },
