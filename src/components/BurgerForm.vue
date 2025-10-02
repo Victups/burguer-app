@@ -138,7 +138,7 @@ export default {
 label {
   font-weight: bold;
   margin-bottom: 15px;
-  color:  #222222;;
+  color: #222;;
   padding: 5px 10px;
   border-left: 4px solid #fcba03;
 }
