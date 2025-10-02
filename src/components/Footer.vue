@@ -14,18 +14,15 @@ export default {
 </template>
 
 <style >
-#footer{
+#footer {
   height: 200px;
   background-color: #222;
-  border-top:4px solid #111;
-  color: #f0a500;
+  border-top: 4px solid #111;
+  color: #fcba03;
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 0;
   width: 100%;
-}
-#footer p {
-  color: #f0a500;
-  margin: 0;
 }
 </style>

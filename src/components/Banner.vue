@@ -17,20 +17,18 @@ export default {
 
 <style scoped>
 .main-banner {
-  width: 100%;
-  height: 500px;
-  background-size: cover;
   background-position: 0 -250px;
+  background-size: cover;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 .main-banner h1 {
-  color: #fff;
-  font-size: 60px;
-  margin-left: 50px;
+  color: #FFF;
   text-align: center;
-  background: #222;
+  font-size: 60px;
+  background-color: #222;
   padding: 20px 40px;
 }
 </style>

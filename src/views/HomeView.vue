@@ -2,7 +2,7 @@
   <div>
     <Banner />
     <div class="main-container">
-      <h1>Monte o seu burger</h1>
+      <h1>Monte o seu burger:</h1>
       <BurgerForm />
     </div>
   </div>
@@ -20,16 +20,3 @@ export default {
   }
 }
 </script>
-
-<style stoped>
-.main-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 30px auto;
-}
-.main-container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-</style>
