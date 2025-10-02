@@ -60,16 +60,31 @@ export default {
   
   methods: {
     async getIngredientes() {
-      const req = await fetch('http://localhost:3000/ingredientes')
-      const data = await req.json()
+      try {
+        const req = await fetch('http://localhost:3000/ingredientes')
+        const data = await req.json()
 
-      this.paes = data.paes
-      this.carnes = data.carnes
-      this.opcionaisdata = data.opcionais
+        this.paes = data.paes
+        this.carnes = data.carnes
+        this.opcionaisdata = data.opcionais
+      } catch (error) {
+        console.error("Erro ao buscar ingredientes:", error)
+        this.msg = "Erro ao carregar ingredientes. Tente novamente mais tarde."
+        setTimeout(() => this.msg = "", 4000)
+      }
     },
+
+
     async createBurger(e) {
 
+
       e.preventDefault()
+      if (!this.nome || !this.pao || !this.carne) {
+        this.msg = "Por favor, preencha todos os campos obrigatórios!";
+        setTimeout(() => this.msg = "", 3000);
+        return;
+      }
+
 
       const data = {
         nome: this.nome,
