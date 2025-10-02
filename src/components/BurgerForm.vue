@@ -57,6 +57,7 @@ export default {
       msg: null
     }
   },
+  
   methods: {
     async getIngredientes() {
       const req = await fetch('http://localhost:3000/ingredientes')
